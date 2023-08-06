@@ -9307,7 +9307,7 @@ li:hover {
   --bs-nav-link-hover-color: fff; }
 
 .gradient-background-body {
-  background: linear-gradient(-45deg, #3e0096, #3605b1, #dbcaf2, #b6b7e9);
+  background: linear-gradient(-45deg, #3e0096, #3605b1, #e2e5f5, #b7b6e9);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
   height: 100vh; }
