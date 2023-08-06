@@ -1,0 +1,11 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+$gradient: linear-gradient(35deg, rgb(63, 16, 181), purple);
+
+header {
+  background: $gradient;
+  border-radius: 60px;
+  color: white;
+  margin-top: 10px;
+  font-weight: bold;
+}
