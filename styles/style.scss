@@ -12,7 +12,7 @@ $color9: #e1d9f61b;
 
 header {
   border-radius: 60px;
-  margin-top: 10px;
+  margin-top: 25px;
 }
 
 .nav-link {
@@ -39,15 +39,92 @@ li:hover {
   --bs-nav-link-hover-color: fff;
 }
 
+.profile {
+  width: 500px;
+  height: 500px;
+  border-radius: 300px;
+  box-shadow: -20px 2px 25px 1px $color7;
+  margin-right: 3rem;
+}
+
+.about {
+  display: flex;
+  flex-direction: row;
+  margin: 50px 0px;
+  padding: 3rem 5rem 3rem 300px;
+}
+
+.btn {
+  background-color: $color6;
+  border-radius: 60px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  box-shadow: 1px 1px 5px 1px $color1;
+}
+
+.btn-link {
+  color: $color1;
+  text-decoration: none;
+}
+
+.btn-link:hover {
+  color: $color1;
+}
+
+.technologies{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  padding: 10px;
+  margin: 50px 400px;
+}
+
+img {
+  width: 80px;
+  height: 80px;
+}
+
+.tech {
+  width: 200px;
+  margin: 10px 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.techicon1{
+  height: 150px;
+  animation: img_action1 10s linear;
+  animation-iteration-count: infinite;
+}
+
+.techicon2{
+  height: 80px;
+  animation: img_action2 20s linear;
+  animation-iteration-count: infinite;
+}
+
+.techicon3{
+  height: 200px;
+  animation: img_action3 10s linear;
+  animation-iteration-count: infinite;
+}
+
 .gradient-background-body {
   background: linear-gradient(-45deg, $color2, $color3,  $color6, $color7);
-  background-size: 400% 400%;
+  background-size: 200% 200%;
   animation: gradient 15s ease infinite;
   height: 100vh;
 }
 
 .gradient-background-header {
-  background: $color5;
+  background:$color5;
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
   height: 6vh;
@@ -63,4 +140,29 @@ li:hover {
   100% {
     background-position: 0% 50%;
   }
+}
+
+
+@keyframes img_action1{
+  0%{transform: rotate(10deg);margin:0;}
+  25%{transform: rotate(10deg);margin:0;}
+  50%{transform: rotate(10deg);margin:0;}
+  75%{transform: rotate(-5deg);margin:0;}
+  100%{transform: rotate(5deg);margin:0;}
+}
+
+@keyframes img_action2{
+  0%{transform: rotate(-10deg);margin:0;}
+  25%{transform: rotate(0deg);margin:0;}
+  50%{transform: rotate(5deg);margin:0;}
+  75%{transform: rotate(10deg);margin:0;}
+  100%{transform: rotate(5deg);margin:0;}
+}
+
+@keyframes img_action3{
+  0%{transform: rotate(5deg);margin:0;}
+  25%{transform: rotate(15deg);margin:0;}
+  50%{transform: rotate(-15deg);margin:0;}
+  75%{transform: rotate(5deg);margin:0;}
+  100%{transform: rotate(0deg);margin:0;}
 }
