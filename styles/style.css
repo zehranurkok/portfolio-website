@@ -9288,25 +9288,32 @@ header {
   margin-top: 10px; }
 
 .nav-link {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: bold;
-  color: white; }
+  color: #05030a; }
 
 li a {
-  color: white;
+  color: #fff;
   margin: 0px 10px; }
 
 li:hover {
-  background-color: #fff;
+  background-color: #e1d9f61b;
   border-radius: 60px;
-  color: #3c01c4; }
+  box-shadow: 1px 1px 5px 1px #05030a;
+  color: #05030a; }
 
-.nav-link a:active {
-  background-color: #fff;
-  color: #fff; }
+.nav {
+  --bs-nav-link-color: #fff;
+  --bs-nav-link-hover-color: fff; }
 
-.gradient-background {
-  background: linear-gradient(-45deg, #3c01c4, #7116e9, #b50772, #0482bc);
+.gradient-background-body {
+  background: linear-gradient(-45deg, #3e0096, #3605b1, #dbcaf2, #b6b7e9);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh; }
+
+.gradient-background-header {
+  background: #ffffff;
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
   height: 6vh; }

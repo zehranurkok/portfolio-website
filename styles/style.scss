@@ -1,9 +1,14 @@
 @import "../node_modules/bootstrap/scss/bootstrap";
 
-$color1: #3c01c4;
-$color2: #7116e9;
-$color3: #b50772;
-$color4: #0482bc;
+$color1: #05030a;
+$color2: #3e0096;
+$color3: #3605b1;
+$color4: #b3a3d8;
+$color5: #ffffff;
+$color6: #dbcaf2;
+$color7: #b6b7e9;
+$color8: #9c9aa1;
+$color9: #e1d9f61b;
 
 header {
   border-radius: 60px;
@@ -11,29 +16,38 @@ header {
 }
 
 .nav-link {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: bold;
-  color: white;
-}
-
-li a {
-  color: white;
-  margin: 0px 10px;
-}
-
-li:hover {
-  background-color: #fff;
-  border-radius: 60px;
   color: $color1;
 }
 
-.nav-link a:active {
-  background-color: #fff;
+li a {
   color: #fff;
+  margin: 0px 10px;
 }
 
-.gradient-background {
-  background: linear-gradient(-45deg, $color1, $color2, $color3,  $color4);
+
+li:hover {
+  background-color: $color9;
+  border-radius: 60px;
+  box-shadow: 1px 1px 5px 1px $color1;
+  color: $color1;
+}
+
+.nav {
+  --bs-nav-link-color: #fff; 
+  --bs-nav-link-hover-color: fff;
+}
+
+.gradient-background-body {
+  background: linear-gradient(-45deg, $color2, $color3,  $color6, $color7);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+}
+
+.gradient-background-header {
+  background: $color5;
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
   height: 6vh;
