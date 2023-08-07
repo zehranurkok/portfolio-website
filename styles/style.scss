@@ -9,10 +9,15 @@ $color6: #e2e5f5;
 $color7: #b7b6e9;
 $color8: #9c9aa1;
 $color9: #e1d9f61b;
+$color-10: #646465;
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
 
 header {
   border-radius: 60px;
-  margin-top: 25px;
+  margin-top: 20px;
 }
 
 .nav-link {
@@ -24,13 +29,14 @@ header {
 li a {
   color: #fff;
   margin: 0px 10px;
+  padding: 0px 5px;
 }
 
 
-li:hover {
-  background-color: $color9;
+header li:hover {
+  background-color: $color5;
   border-radius: 60px;
-  box-shadow: 1px 1px 5px 1px $color1;
+  box-shadow: 1px 1px 5px 1px $color-10;
   color: $color1;
 }
 
@@ -40,30 +46,60 @@ li:hover {
 }
 
 .profile {
-  width: 500px;
-  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile img {
+  width: 450px;
+  height: 450px;
   border-radius: 300px;
-  box-shadow: -20px 2px 25px 1px $color7;
-  margin-right: 3rem;
+  box-shadow: -10px 0px 10px 1px $color-10;
+  margin: 20px 20px 20px 380px;
 }
 
 .about {
   display: flex;
   flex-direction: row;
-  margin: 50px 0px;
-  padding: 3rem 5rem 3rem 300px;
+  margin: 20px 0px 0px;
+  padding: 5px 5px ;
+}
+
+.right {
+  font-family: 'Nothing You Could Do', cursive;
+  font-size: 35px;
+}
+
+h3 {
+  float: right;
+}
+
+.about span {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.aboutcontent {
+  flex-direction: column;
 }
 
 .btn {
-  background-color: $color6;
+  box-shadow: 1px 1px 5px 1px $color-10;
   border-radius: 60px;
   font-size: 20px;
   font-weight: bold;
-  margin-top: 10px;
+  margin-top: 30px;
+}
+
+.buttons {
+  margin-top: 30px;
+  margin-left: 250px;
 }
 
 .btn:hover {
-  box-shadow: 1px 1px 5px 1px $color1;
+  background-color: $color6;
+  box-shadow: 1px 1px 5px 1px $color9;
 }
 
 .btn-link {
@@ -81,10 +117,10 @@ li:hover {
   flex-direction: row;
   justify-content: center;
   padding: 10px;
-  margin: 50px 400px;
+  margin: 50px 20px;
 }
 
-img {
+.tech img {
   width: 80px;
   height: 80px;
 }
@@ -110,10 +146,85 @@ img {
   animation-iteration-count: infinite;
 }
 
-.techicon3{
+.techicon3 {
   height: 200px;
   animation: img_action3 10s linear;
   animation-iteration-count: infinite;
+}
+
+footer  {
+  border-top: solid 2px #e4e4e4;
+  bottom: 0px;
+  padding-top: 10px;
+  padding-bottom: 0;
+  width: 100%;
+  align-items: flex-end;
+}
+
+footer span {
+  color: #FFF;
+  font-size: 16px;
+}
+
+ul {
+  list-style: none;
+}
+
+footer ul li {
+  display: inline;
+  
+}
+
+.container footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fa {
+	width: 50px;
+	height: 50px;
+  display: block;
+	align-items: center;
+  font-size: 20px;
+	color: #FFF;
+	color: rgba(255, 255, 255, 0.8);
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+  padding: 15px 0px 0px 15px;
+}
+
+.fa:hover, .fa:active {
+	color: #FFF;
+	-webkit-box-shadow: 1px 1px 3px #333;
+	-moz-box-shadow: 1px 1px 3px #333;
+	box-shadow: 1px 1px 3px #333; 
+}
+
+ .icon-zoom .fa:hover, .icon-zoom .fa:active { 
+ 	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	transform: scale(1.1); 
+}
+
+.fa-github {
+  background-color:#070709;
+  border-radius: 50%;
+}
+
+.fa-linkedin {
+  background-color:#0085AE;
+  border-radius: 50%;
+}
+
+.fa-instagram {
+  background-color:#f03211;
+  border-radius: 50%;
 }
 
 .gradient-background-body {
@@ -159,7 +270,7 @@ img {
   100%{transform: rotate(5deg);margin:0;}
 }
 
-@keyframes img_action3{
+@keyframes img_action3{ 
   0%{transform: rotate(5deg);margin:0;}
   25%{transform: rotate(15deg);margin:0;}
   50%{transform: rotate(-15deg);margin:0;}
