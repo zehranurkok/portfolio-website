@@ -597,32 +597,33 @@ footer ul li {
   }
 }
 
-@media (max-width:575px) {
-  
+@media (max-width:576px) and (min-width:430px) {
+
   .nav-link {
-    font-size: 10px;
+    font-size: 12px;
   }
   
   .profile img {
-    width: 150px;
-    height: 150px;
-    margin: 10px 20px 0px 20px;
+    width: 200px;
+    height: 200px;
+    margin: 30px 20px 0px 20px;
   }
   
   .right {
-    font-size: 14px;
+    font-size: 18px;
   }
   
   h4 {
-    font-size: 10px;
+    font-size: 14px;
   }
   
   .about span {
-    font-size: 10px;
+    font-size: 14px;
     margin: 20px 0px;
   }
 
   .about {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -630,12 +631,13 @@ footer ul li {
   }
   
   .btn {
-    font-size: 10px;
+    font-size: 12px;
+    margin-top: 5px;
   }
 
   .buttons {
-    margin-top: 10px;
-    margin-left: 120px;
+    margin-left: auto;
+    margin-top: 50px;
   }
 
   .technologies{
@@ -649,7 +651,7 @@ footer ul li {
   
   .tech {
     width: 100px;
-    margin: 5px 20px;
+    margin: 5px 10px;
   }
   
   .techicon1{
@@ -665,8 +667,8 @@ footer ul li {
   }
   
   #projects .container {
-    padding: 20px 0px;
-    margin: 20px;
+    padding: 20px 10px;
+    margin: 5px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
     align-items: center;
@@ -675,33 +677,169 @@ footer ul li {
   
   .project {
     padding: 10px 6px;
-    font-size: 10px;
-  }
-
-  * {
-    box-sizing: content-box;
+    font-size: 12px;
   }
 
   footer {
     padding-top: 0px;
   }
+
+  .col-6 {
+    width: 80%;
+  }
   
   .fa {
-    width: 20px;
-    height: 20px;
+    width: 28px;
+    height: 28px;
     font-size: 13px;
     padding: 8px 0px 0px 8px;
   }
 
+  li a {
+    margin: 0px 5px;
+  }
+
   .footer-left a {
-    font-size: 13px;
+    font-size: 12px;
   }
 
   .gradient-background-header {
     height: 4.5vh;
+    width: auto;
   }
 
   .gradient-background-body {
     height: 200vh;
+  }
+
+  #about {
+    width: 100%;
+  }
+
+  #projects {
+    width: 100%;
+  }
+}
+
+@media (max-width:430px) {
+
+  .nav-link {
+    font-size: 12px;
+  }
+  
+  .profile img {
+    width: 200px;
+    height: 200px;
+    margin: 30px 20px 0px 20px;
+  }
+  
+  .right {
+    font-size: 17px;
+  }
+  
+  h4 {
+    font-size: 13px;
+  }
+  
+  .about span {
+    font-size: 14px;
+    margin: 20px 0px;
+  }
+
+  .about {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .btn {
+    font-size: 12px;
+    margin-top: 5px;
+  }
+
+  .buttons {
+    margin-left: auto;
+    margin-top: 50px;
+  }
+
+  .technologies{
+    padding: 8px;
+  }
+  
+  .tech img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .tech {
+    width: 100px;
+    margin: 5px 10px;
+  }
+  
+  .techicon1{
+    height: 100px;
+  }
+  
+  .techicon2{
+    height: 50px;
+  }
+  
+  .techicon3 {
+    height: 80px;
+  }
+  
+  #projects .container {
+    padding: 20px 10px;
+    margin: 5px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .project {
+    padding: 10px 6px;
+    font-size: 12px;
+  }
+
+  footer {
+    padding-top: 0px;
+  }
+
+  .col-6 {
+    width: 80%;
+  }
+  
+  .fa {
+    width: 30px;
+    height: 30px;
+    font-size: 13px;
+    padding: 8px 0px 0px 9px;
+  }
+
+  li a {
+    margin: 0px 3px;
+  }
+
+  .footer-left a {
+    font-size: 12px;
+  }
+
+  .gradient-background-header {
+    height: 5.5vh;
+    width: auto;
+  }
+
+  .gradient-background-body {
+    height: 200vh;
+  }
+
+  #about {
+    width: 100%;
+  }
+
+  #projects {
+    width: 100%;
   }
 }
