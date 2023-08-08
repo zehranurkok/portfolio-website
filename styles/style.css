@@ -9725,17 +9725,17 @@ footer ul li {
 
 @media (max-width: 575px) {
   .nav-link {
-    font-size: 8px; }
+    font-size: 10px; }
   .profile img {
     width: 100px;
     height: 100px;
     margin: 10px 20px 0px 20px; }
   .right {
-    font-size: 12px; }
+    font-size: 14px; }
   h4, .h4 {
-    font-size: 8px; }
+    font-size: 10px; }
   .about span {
-    font-size: 8px;
+    font-size: 10px;
     margin: 20px 0px; }
   .about {
     display: flex;
@@ -9743,15 +9743,15 @@ footer ul li {
     justify-content: center;
     align-items: center; }
   .btn {
-    font-size: 8px; }
+    font-size: 10px; }
   .buttons {
     margin-top: 10px;
     margin-left: 120px; }
   .technologies {
     padding: 10px; }
   .tech img {
-    width: 30px;
-    height: 30px; }
+    width: 40px;
+    height: 40px; }
   .tech {
     width: 100px;
     margin: 5px 20px; }
@@ -9770,7 +9770,7 @@ footer ul li {
     justify-content: center; }
   .project {
     padding: 10px 6px;
-    font-size: 8px; }
+    font-size: 10px; }
   * {
     box-sizing: content-box; }
   footer {
