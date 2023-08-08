@@ -9798,11 +9798,12 @@ footer ul li {
 
 @media (max-width: 430px) {
   .nav-link {
+    padding-top: 15px;
     font-size: 12px; }
   .profile img {
     width: 200px;
     height: 200px;
-    margin: 30px 20px 0px 20px; }
+    margin: 40px 20px 0px 20px; }
   .right {
     font-size: 17px; }
   h4, .h4 {
