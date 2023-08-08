@@ -13,6 +13,7 @@ $color-10: #646465;
 
 body {
   font-family: 'Montserrat', sans-serif;
+  width: auto;
 }
 
 header {
@@ -80,8 +81,9 @@ h3 {
   font-weight: bold;
 }
 
-.aboutcontent {
-  flex-direction: column;
+.linkedin:hover {
+  background-color:#0085AE;
+  box-shadow: 1px 1px 5px 1px $color9;
 }
 
 .btn {
@@ -97,7 +99,7 @@ h3 {
   margin-left: 250px;
 }
 
-.btn:hover {
+.classic:hover {
   background-color: $color6;
   box-shadow: 1px 1px 5px 1px $color9;
 }
@@ -152,18 +154,43 @@ h3 {
   animation-iteration-count: infinite;
 }
 
-footer  {
-  border-top: solid 2px #e4e4e4;
-  bottom: 0px;
-  padding-top: 10px;
-  padding-bottom: 0;
-  width: 100%;
-  align-items: flex-end;
+#projects {
+  background-color: #fff;
 }
 
-footer span {
-  color: #FFF;
-  font-size: 16px;
+#projects .container {
+  padding: 80px 0px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+}
+
+.project {
+  padding: 30px 20px;
+  font-size: 20px;
+}
+
+.project span a {
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  color: $color1;
+}
+
+.project p {
+  opacity: 0.8;
+  color: $color1;
+}
+
+footer  {
+  bottom: 0px;
+  margin-top: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  align-items: flex-end;
 }
 
 ul {
@@ -175,7 +202,13 @@ footer ul li {
   
 }
 
-.container footer {
+.footer-left a {
+  color: #FFF;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.container footer { 
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -194,7 +227,7 @@ footer ul li {
 	-ms-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
-  padding: 15px 0px 0px 15px;
+  padding: 16px 0px 0px 16px;
 }
 
 .fa:hover, .fa:active {
