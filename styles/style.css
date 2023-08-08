@@ -9659,7 +9659,7 @@ footer ul li {
   .gradient-background-header {
     height: 4.5vh; } }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) and (min-width: 576px) {
   .nav-link {
     font-size: 8px; }
   .profile img {
