@@ -2,9 +2,10 @@
   "scripts": {
     "watch:scss": "node-sass -w styles/style.scss styles/style.css"
   },
-  
+  "author": "Zehra Nur Kök",
   "dependencies": {
     "bootstrap": "^5.3.1",
     "node-sass": "^9.0.0"
   }
+  
 }
