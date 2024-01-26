@@ -162,8 +162,8 @@ h3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  justify-content: flex-start;
-  align-items: center;
+  justify-content: center;
+  align-items: start;
 }
 
 .project {
